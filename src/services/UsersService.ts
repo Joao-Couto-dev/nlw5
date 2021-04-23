@@ -28,6 +28,12 @@ class UsersService{
 
         return user;
     }
+
+    async findUserById(email: string){
+        const user = await this.usersRepository.findOne({ email });
+
+        return user;
+    }
 }
 
 export default UsersService;
