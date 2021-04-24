@@ -17,6 +17,10 @@ class SettingsController{
             })
         }
     }
+
+    async findByUserName(request: Request, response: Response){
+        const {username} = request.body;
+    }
 }
 
 export default SettingsController;
